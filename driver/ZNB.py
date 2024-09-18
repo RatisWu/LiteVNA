@@ -10,7 +10,7 @@ class VNA_ZNB20:
     def __init__(self, address: str):
         self.address = address
         try:
-            self.vna = RohdeSchwarzZNB20('VNA', address)
+            self.vna = RohdeSchwarzZNB20('VNA', address, timeout=300)
             print(f'Connected to: {self.vna.IDN()}')
         except Exception as e:
             print(f"Connection error: {e}")
