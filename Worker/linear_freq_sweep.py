@@ -79,5 +79,8 @@ for m_task in measurements:
         # # Generate the frequency array
         plt.plot(freq_array, 20*np.log10(np.abs(s_params)))
         plt.plot(freq_array, np.angle(s_params))
+        plt.ylabel("Amp (dB)")
+        plt.xlabel("Freq. (Hz)")
+        plt.grid()
         plt.savefig(f"{output_folder}/linearSweep.png")
         plt.close()
