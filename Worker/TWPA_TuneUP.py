@@ -8,7 +8,7 @@ from os import makedirs
 from os.path import exists
 import tomlkit
 from driver import get_VNA
-from TWPA_ana.RSsgs100A import sgs100A
+from driver.RSsgs100A import sgs100A
 
 config_path = '/home/ratiswu/Documents/GitHub/LiteVNA/Worker/TWPA_tuneUp_request.toml'
 
